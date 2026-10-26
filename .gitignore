@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.next/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Files not to push
+PROJECT_BRIEF.md
+document.txt
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
