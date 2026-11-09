@@ -1,0 +1,102 @@
+// Prisma schema for Idea Innovation Cell (IIC) website
+// Using PostgreSQL on Neon with connection pooling support
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// Key innovation and student projects developed at IIC
+model Project {
+  id            Int    @id @default(autoincrement())
+  title         String
+  description   String
+  image_path    String
+  display_order Int    @default(0)
+
+  @@map("projects")
+}
+
+// Workshops, seminars, hackathons and major events organized or attended
+model Event {
+  id            Int    @id @default(autoincrement())
+  title         String
+  image_path    String
+  description   String
+  display_order Int    @default(0)
+
+  @@map("events")
+}
+
+// Awards, recognitions and laurels won by IIC teams
+model Achievement {
+  id          Int     @id @default(autoincrement())
+  title       String
+  description String
+  image_path  String?
+
+  @@map("achievements")
+}
+
+// Patents filed or granted by IIC innovators (status restricted to 'filed' | 'granted')
+model Patent {
+  id            Int     @id @default(autoincrement())
+  title         String
+  patent_number String?
+  status        String?
+  attribution   String?
+  image_path    String?
+  display_order Int     @default(0)
+
+  @@map("patents")
+}
+
+// Press releases, news articles and media features
+model MediaCoverage {
+  id            Int    @id @default(autoincrement())
+  title         String
+  description   String
+  image_path    String
+  display_order Int    @default(0)
+
+  @@map("media_coverage")
+}
+
+// Member leadership categorization: coordinator vs member
+enum MemberType {
+  coordinator
+  member
+}
+
+// Team members across batches, leadership roles, and councils
+model TeamMember {
+  id            Int        @id @default(autoincrement())
+  name          String
+  role          String
+  member_type   MemberType
+  batch         String?
+  image_path    String
+  linkedin_url  String?
+  github_url    String?
+  display_order Int        @default(0)
+
+  @@map("team_members")
+}
+
+// Messages received through the Contact Us form
+model ContactMessage {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String
+  phone      String?
+  message    String
+  status     String   @default("unread")
+  created_at DateTime @default(now())
+
+  @@map("contact_messages")
+}

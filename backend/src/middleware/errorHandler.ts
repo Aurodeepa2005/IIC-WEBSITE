@@ -1,16 +1,28 @@
 import { Request, Response, NextFunction } from "express";
 
 /**
- * Custom application error interface with optional HTTP status code
+ * Custom application error interface with optional HTTP status code.
  */
 export interface AppError extends Error {
   statusCode?: number;
+  status?: number;
 }
 
 /**
- * Global error-handling middleware for Express.
- * Catches unhandled errors passed via next(err), logs them,
- * and sends a consistent JSON error response to the client.
+ * 404 Not Found middleware for unmatched routes.
+ * Returns standard { "error": "Route not found" } with HTTP 404.
+ */
+export function notFoundHandler(req: Request, res: Response): void {
+  res.status(404).json({
+    error: "Route not found"
+  });
+}
+
+/**
+ * Central error-handling middleware (must be registered LAST in the middleware chain).
+ * Catches unhandled errors passed via next(error), logs the full error to the console,
+ * and sends a safe JSON error response: { "error": "readable message" }.
+ * Stack traces, Prisma errors, and database details are never sent to the client.
  */
 export function errorHandler(
   err: AppError,
@@ -18,21 +30,16 @@ export function errorHandler(
   res: Response,
   next: NextFunction
 ): void {
-  const statusCode = err.statusCode || 500;
-  const message = err.message || "Internal Server Error";
+  const statusCode = err.statusCode || err.status || 500;
 
-  // Log error details for server-side debugging
-  console.error(`[Error] ${req.method} ${req.url} - Status: ${statusCode} - ${message}`);
-  if (statusCode === 500 && err.stack) {
-    console.error(err.stack);
-  }
+  // Log full error details on the server console for debugging
+  console.error(`[Server Error] ${req.method} ${req.url} - Status ${statusCode}:`, err);
+
+  // Never expose raw stack traces or internal server details on 500 errors
+  const clientMessage =
+    statusCode >= 500 ? "Internal server error" : (err.message || "An error occurred");
 
   res.status(statusCode).json({
-    success: false,
-    error: {
-      message: message,
-      statusCode: statusCode
-    }
+    error: clientMessage
   });
 }
-

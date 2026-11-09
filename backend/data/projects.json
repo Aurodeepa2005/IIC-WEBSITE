@@ -1,0 +1,14 @@
+[
+  {
+    "title": "VSLV",
+    "description": "India's First Multipurpose Student Rocketry Mission - Launching our own satellite launch vehicle to a height of 50+ km and deploying a Pico-sat to monitor the Hirakud Dam.",
+    "image_path": "/images/projects/vslv.png",
+    "display_order": 1
+  },
+  {
+    "title": "Krishi Sevak",
+    "description": "A hand-operated rice transplanter that is lightweight, low-cost, pedal-operated, and requires no fuel or high maintenance.",
+    "image_path": "/images/projects/krishi_sevak.jpg",
+    "display_order": 2
+  }
+]

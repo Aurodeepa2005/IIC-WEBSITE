@@ -1,0 +1,14 @@
+[
+  {
+    "title": "PIES Webinar Series",
+    "description": "Programs for Innovation and Entrepreneurship in Space (PIES) webinar series covering frontier topics in space technology, intellectual property rights, and blockchain.",
+    "image_path": "/images/events/pies.jpg",
+    "display_order": 1
+  },
+  {
+    "title": "Hack for COVID-19",
+    "description": "A nationwide online hackathon organized by IIC VSSUT uniting ingenious minds across India to develop workable technical solutions against the COVID-19 pandemic.",
+    "image_path": "/images/events/covid19.jpg",
+    "display_order": 2
+  }
+]

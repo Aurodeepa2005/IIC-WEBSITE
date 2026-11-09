@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Hand-Operated Agricultural Rice Planter Mechanism",
+    "patent_number": "IN202031012345",
+    "status": "granted",
+    "attribution": "Idea Innovation Cell, VSSUT Burla",
+    "image_path": "/images/patents/rice_planter_patent.jpg",
+    "display_order": 1
+  },
+  {
+    "title": "Non-Invasive Optical Hemoglobin and Glucose Detection Device",
+    "patent_number": "IN202131054321",
+    "status": "filed",
+    "attribution": "Idea Innovation Cell, VSSUT Burla",
+    "image_path": "/images/patents/anecure_patent.jpg",
+    "display_order": 2
+  }
+]

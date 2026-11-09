@@ -1,4 +1,5 @@
 import { Router, Request, Response } from "express";
+import projectRoutes from "./project.routes";
 
 const router = Router();
 
@@ -16,5 +17,9 @@ router.get("/health", (req: Request, res: Response): void => {
   });
 });
 
-export default router;
+/**
+ * Resource routes
+ */
+router.use("/projects", projectRoutes);
 
+export default router;

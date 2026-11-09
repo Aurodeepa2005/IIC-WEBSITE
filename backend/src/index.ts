@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import apiRoutes from "./routes";
-import { errorHandler } from "./middleware/errorHandler";
+import { errorHandler, notFoundHandler } from "./middleware/errorHandler";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -24,10 +24,10 @@ app.use(
 );
 
 /**
- * Body parsing middleware
+ * Body parsing middleware with a 10kb body size limit
  */
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: "10kb" }));
+app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 
 /**
  * Basic request logger to assist during development and debugging
@@ -43,20 +43,12 @@ app.use((req: Request, res: Response, next: NextFunction): void => {
 app.use("/api", apiRoutes);
 
 /**
- * 404 handler for any undefined route
+ * 404 handler for unknown routes (returns { "error": "Route not found" })
  */
-app.use((req: Request, res: Response): void => {
-  res.status(404).json({
-    success: false,
-    error: {
-      message: `Route ${req.method} ${req.originalUrl} not found`,
-      statusCode: 404
-    }
-  });
-});
+app.use(notFoundHandler);
 
 /**
- * Global centralized error handling middleware
+ * Global centralized error handling middleware (registered LAST)
  */
 app.use(errorHandler);
 
@@ -72,4 +64,3 @@ app.listen(port, (): void => {
 });
 
 export default app;
-

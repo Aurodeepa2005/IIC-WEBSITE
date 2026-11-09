@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Bodhisattwa Sanghapriya",
+    "role": "Former Team Captain & Founder",
+    "member_type": "coordinator",
+    "batch": "2018",
+    "image_path": "/images/team/bodhisattwa.jpg",
+    "linkedin_url": "https://www.linkedin.com/in/sbodhisattwa",
+    "github_url": null,
+    "display_order": 1
+  },
+  {
+    "name": "Mukesh Nayak",
+    "role": "Secretary",
+    "member_type": "coordinator",
+    "batch": "2021",
+    "image_path": "/images/team/mukesh.jpg",
+    "linkedin_url": "https://www.linkedin.com/in/mukesh-nayak",
+    "github_url": "https://github.com/mukeshnayak",
+    "display_order": 2
+  }
+]

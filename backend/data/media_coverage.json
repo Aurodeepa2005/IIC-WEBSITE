@@ -1,0 +1,14 @@
+[
+  {
+    "title": "VSSUT Students Build Indigenous Rocketry Prototype VSLV",
+    "description": "Leading national dailies covered the indigenous rocketry achievements of Idea Innovation Cell student innovators aiming for suborbital research missions.",
+    "image_path": "/images/media/vslv_daily_news.jpg",
+    "display_order": 1
+  },
+  {
+    "title": "Innovation Cell Pioneers Cost-Effective Agro-Machinery for Local Farmers",
+    "description": "Regional news spotlighted the low-cost Krishi Sevak rice transplanter developed by IIC members for empowering rural agricultural communities.",
+    "image_path": "/images/media/agro_innovation_press.jpg",
+    "display_order": 2
+  }
+]
