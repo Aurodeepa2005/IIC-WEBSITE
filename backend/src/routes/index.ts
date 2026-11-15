@@ -5,6 +5,7 @@ import achievementRoutes from "./achievement.routes";
 import patentRoutes from "./patent.routes";
 import mediaCoverageRoutes from "./media-coverage.routes";
 import teamRoutes from "./team.routes";
+import contactRoutes from "./contact.routes";
 
 const router = Router();
 
@@ -31,5 +32,6 @@ router.use("/achievements", achievementRoutes);
 router.use("/patents", patentRoutes);
 router.use("/media-coverage", mediaCoverageRoutes);
 router.use("/team", teamRoutes);
+router.use("/contact", contactRoutes);
 
 export default router;

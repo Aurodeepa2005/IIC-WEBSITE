@@ -35,9 +35,13 @@ export function errorHandler(
   // Log full error details on the server console for debugging
   console.error(`[Server Error] ${req.method} ${req.url} - Status ${statusCode}:`, err);
 
-  // Never expose raw stack traces or internal server details on 500 errors
-  const clientMessage =
+  // Format client message: return clear error for malformed JSON, and hide internal 500 details
+  let clientMessage =
     statusCode >= 500 ? "Internal server error" : (err.message || "An error occurred");
+
+  if (err instanceof SyntaxError && (statusCode === 400 || "body" in err || (err as any).type === "entity.parse.failed")) {
+    clientMessage = "Malformed JSON in request body";
+  }
 
   res.status(statusCode).json({
     error: clientMessage
