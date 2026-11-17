@@ -9,10 +9,10 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
-const corsOrigin = process.env.CORS_ORIGIN || "http://localhost:3000";
+const corsOrigin = "http://localhost:3000";
 
 /**
- * Configure CORS to allow frontend communication
+ * Configure CORS to allow ONLY frontend communication from http://localhost:3000
  */
 app.use(
   cors({

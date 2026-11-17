@@ -1,12 +1,32 @@
 [
   {
-    "title": "2nd Runner Up at L&T CreaTech",
-    "description": "Team Infinity Loop of Idea Innovation Cell secured 2nd Runner Up position at L&T CreaTech in Mumbai for their project UJJWAL, an intelligent variable intensity lighting solution.",
-    "image_path": "/images/achievements/lnt_createch.jpg"
+    "title": "SAMPLE - 1st Prize at National Innovation Conclave",
+    "description": "Secured top honours at the National Innovation Conclave for an automated low-cost paddy transplanter invention. The team was awarded a gold trophy and a prototyping grant from the Ministry of MSME.",
+    "image_path": "/images/_placeholders/landscape-teal.webp"
   },
   {
-    "title": "National Recognition by Union Minister",
-    "description": "Hon'ble Union Minister of Petroleum & Natural Gas and Steel, Shri Dharmendra Pradhan commended Team VSLV of IIC VSSUT Burla at the National Startup Conclave in New Delhi.",
+    "title": "SAMPLE - Best Student Aerospace Research Award",
+    "description": "Recognized by the Aeronautical Society for breakthrough telemetry and recovery designs in student sounding rockets. The project received the prestigious Young Innovator citation.",
+    "image_path": null
+  },
+  {
+    "title": "SAMPLE - Finalist at Smart India Hackathon",
+    "description": "Ranked among the top nationwide teams in the disaster management hardware track. The squad built an emergency mesh communication relay node within 36 hours.",
+    "image_path": "/images/_placeholders/card-rose.webp"
+  },
+  {
+    "title": "SAMPLE - State Innovation Laurels by Governor",
+    "description": "Presented with the State Youth Innovation Trophy at Raj Bhavan for measurable societal impact in rural water purification. The citation praised student dedication to community technology.",
+    "image_path": null
+  },
+  {
+    "title": "SAMPLE - Winner of Agri-Tech Challenge Cup",
+    "description": "Clinched first place in the Agri-Tech Challenge Cup for solar-powered soil nutrient telemetry probes. The jury praised its rugged weather-resistant design for marginal farmers.",
+    "image_path": "/images/_placeholders/landscape-blue.webp"
+  },
+  {
+    "title": "SAMPLE - Excellence in Intellectual Property Trophy",
+    "description": "Awarded by the Research Development Corporation for record student patent filings across eastern engineering institutions. Celebrates the cell's sustained commitment to original inventions.",
     "image_path": null
   }
 ]

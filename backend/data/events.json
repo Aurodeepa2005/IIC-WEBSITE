@@ -1,14 +1,38 @@
 [
   {
-    "title": "PIES Webinar Series",
-    "description": "Programs for Innovation and Entrepreneurship in Space (PIES) webinar series covering frontier topics in space technology, intellectual property rights, and blockchain.",
-    "image_path": "/images/events/pies.jpg",
+    "title": "SAMPLE - National Space Innovation Summit",
+    "description": "A two-day national symposium bringing together aerospace scientists and student innovators to discuss satellite miniaturization. Featured keynote addresses and technical panels by former mission directors.",
+    "image_path": "/images/_placeholders/poster-purple.webp",
     "display_order": 1
   },
   {
-    "title": "Hack for COVID-19",
-    "description": "A nationwide online hackathon organized by IIC VSSUT uniting ingenious minds across India to develop workable technical solutions against the COVID-19 pandemic.",
-    "image_path": "/images/events/covid19.jpg",
+    "title": "SAMPLE - Annual Hack-A-Cell 48h Hackathon",
+    "description": "An intense 48-hour prototyping hackathon challenging over 300 student engineers to solve pressing civic problems. Winning teams received direct incubation support and seed prototyping grants.",
+    "image_path": "/images/_placeholders/poster-amber.webp",
     "display_order": 2
+  },
+  {
+    "title": "SAMPLE - IPR and Patent Filing Workshop",
+    "description": "A comprehensive hands-on workshop guiding creators through patent claim writing and prior art discovery. Led by registered patent attorneys to demystify intellectual property protection.",
+    "image_path": "/images/_placeholders/landscape-blue.webp",
+    "display_order": 3
+  },
+  {
+    "title": "SAMPLE - Robotics & Embedded Systems Bootcamp",
+    "description": "An intensive five-day technical bootcamp covering microcontrollers, sensor integration, and robot operating systems. Participants engineered and tested autonomous obstacle-avoidance rovers.",
+    "image_path": "/images/_placeholders/poster-purple.webp",
+    "display_order": 4
+  },
+  {
+    "title": "SAMPLE - Ideation to Incubation Masterclass",
+    "description": "An interactive masterclass for student startup founders covering business model canvases and venture funding mechanics. Regional incubators reviewed early-stage student pitch decks.",
+    "image_path": "/images/_placeholders/poster-amber.webp",
+    "display_order": 5
+  },
+  {
+    "title": "SAMPLE - Community Clean-Tech Exhibition",
+    "description": "An open showcase presenting grassroots sustainability inventions to regional school students and civic leaders. Exhibits demonstrated low-cost solar pumps and eco-friendly composting tech.",
+    "image_path": "/images/_placeholders/card-rose.webp",
+    "display_order": 6
   }
 ]

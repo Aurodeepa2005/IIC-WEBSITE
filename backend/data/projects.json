@@ -1,14 +1,38 @@
 [
   {
-    "title": "VSLV",
-    "description": "India's First Multipurpose Student Rocketry Mission - Launching our own satellite launch vehicle to a height of 50+ km and deploying a Pico-sat to monitor the Hirakud Dam.",
-    "image_path": "/images/projects/vslv.png",
+    "title": "SAMPLE - Autonomous Agricultural Drone",
+    "description": "An intelligent drone platform designed for precision agriculture and crop health monitoring. It automates targeted pesticide spraying and multispectral vegetation analysis across rural farms.",
+    "image_path": "/images/_placeholders/landscape-blue.webp",
     "display_order": 1
   },
   {
-    "title": "Krishi Sevak",
-    "description": "A hand-operated rice transplanter that is lightweight, low-cost, pedal-operated, and requires no fuel or high maintenance.",
-    "image_path": "/images/projects/krishi_sevak.jpg",
+    "title": "SAMPLE - Smart Water Quality Monitor",
+    "description": "An IoT-enabled sensor array deployed to analyze dissolved oxygen and pollutant levels in real time. Continuous telemetry is uploaded to a cloud dashboard for environmental alerts.",
+    "image_path": "/images/_placeholders/landscape-teal.webp",
     "display_order": 2
+  },
+  {
+    "title": "SAMPLE - Solar Powered E-Vehicle",
+    "description": "A lightweight electric quadricycle featuring integrated rooftop solar panels and regenerative braking. Engineered entirely by student innovators to enable zero-emission campus commuting.",
+    "image_path": "/images/_placeholders/card-rose.webp",
+    "display_order": 3
+  },
+  {
+    "title": "SAMPLE - VSLV Rocket Propulsion Unit",
+    "description": "A solid rocket motor testbed engineered for high-altitude student atmospheric research missions. It incorporates custom telemetry avionics and redundant parachute deployment systems.",
+    "image_path": "/images/_placeholders/landscape-blue.webp",
+    "display_order": 4
+  },
+  {
+    "title": "SAMPLE - Bionic Prosthetic Arm",
+    "description": "A low-cost 3D-printed prosthetic limb controlled by surface electromyography muscle sensors. Designed to restore functional motor grip movements for amputees at accessible costs.",
+    "image_path": "/images/_placeholders/landscape-teal.webp",
+    "display_order": 5
+  },
+  {
+    "title": "SAMPLE - Low-Cost Mechanical Ventilator",
+    "description": "An automated emergency ventilator developed for primary healthcare centres lacking ICU infrastructure. Features motorized bag-valve compression with pressure relief safety valves.",
+    "image_path": "/images/_placeholders/card-rose.webp",
+    "display_order": 6
   }
 ]

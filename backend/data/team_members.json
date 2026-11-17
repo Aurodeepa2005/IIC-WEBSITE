@@ -1,22 +1,62 @@
 [
   {
-    "name": "Bodhisattwa Sanghapriya",
-    "role": "Former Team Captain & Founder",
+    "name": "SAMPLE - Aarav Sharma",
+    "role": "Lead Student Coordinator",
     "member_type": "coordinator",
-    "batch": "2018",
-    "image_path": "/images/team/bodhisattwa.jpg",
-    "linkedin_url": "https://www.linkedin.com/in/sbodhisattwa",
-    "github_url": null,
+    "batch": "2022",
+    "image_path": "/images/_placeholders/square-avatar.webp",
+    "linkedin_url": "https://www.linkedin.com/in/sample-aarav",
+    "github_url": "https://github.com/sample-aarav",
     "display_order": 1
   },
   {
-    "name": "Mukesh Nayak",
-    "role": "Secretary",
+    "name": "SAMPLE - Priyadarshini Mohapatra",
+    "role": "Technical Operations Coordinator",
     "member_type": "coordinator",
-    "batch": "2021",
-    "image_path": "/images/team/mukesh.jpg",
-    "linkedin_url": "https://www.linkedin.com/in/mukesh-nayak",
-    "github_url": "https://github.com/mukeshnayak",
+    "batch": "2022",
+    "image_path": "/images/_placeholders/square-avatar-alt.webp",
+    "linkedin_url": "https://www.linkedin.com/in/sample-priyadarshini",
+    "github_url": null,
     "display_order": 2
+  },
+  {
+    "name": "SAMPLE - Rohan Patnaik",
+    "role": "Robotics Subsystem Lead",
+    "member_type": "member",
+    "batch": "2023",
+    "image_path": "/images/_placeholders/square-avatar.webp",
+    "linkedin_url": null,
+    "github_url": "https://github.com/sample-rohan",
+    "display_order": 3
+  },
+  {
+    "name": "SAMPLE - Ananya Das",
+    "role": "Embedded Firmware Engineer",
+    "member_type": "member",
+    "batch": "2023",
+    "image_path": "/images/_placeholders/square-avatar-alt.webp",
+    "linkedin_url": "https://www.linkedin.com/in/sample-ananya",
+    "github_url": "https://github.com/sample-ananya",
+    "display_order": 4
+  },
+  {
+    "name": "SAMPLE - Subrat Kumar Jena",
+    "role": "Aerodynamics & Propulsion Associate",
+    "member_type": "member",
+    "batch": "2024",
+    "image_path": "/images/_placeholders/square-avatar.webp",
+    "linkedin_url": "https://www.linkedin.com/in/sample-subrat",
+    "github_url": null,
+    "display_order": 5
+  },
+  {
+    "name": "SAMPLE - Riya Sen",
+    "role": "Research & IPR Analyst",
+    "member_type": "member",
+    "batch": "2024",
+    "image_path": "/images/_placeholders/square-avatar-alt.webp",
+    "linkedin_url": null,
+    "github_url": null,
+    "display_order": 6
   }
 ]
